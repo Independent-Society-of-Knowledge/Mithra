@@ -1,5 +1,5 @@
 {
-  "name": "mithra",
+  "name": "iskportal",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -9,37 +9,31 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "katex": "^0.16.19",
-    "marked": "^15.0.6",
-    "pinia": "^2.3.0",
-    "vue": "^3.5.13",
-    "vue-router": "^4.5.0",
-    "vuex": "^4.0.2"
+    "core-js": "^3.38.1",
+    "html-loader": "^5.1.0",
+    "markdown-it": "^14.1.0",
+    "markdown-loader": "^8.0.0",
+    "marked": "^14.1.2",
+    "marked-code-format": "^1.1.6",
+    "marked-code-preview": "^1.3.7",
+    "marked-katex-extension": "^5.1.2",
+    "mathpix-markdown-it": "^2.0.2",
+    "vue": "^3.4.29",
+    "vue-markdown-render": "^2.2.1",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^4.4.5"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.1",
+    "@types/markdown-it": "^14.1.2",
+    "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.49",
-    "postcss-import": "^16.1.0",
-    "postcss-loader": "^8.1.1",
-    "sass": "^1.83.1",
-    "sass-embedded": "^1.83.1",
-    "sass-loader": "^16.0.4",
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.0.5",
-    "vite-plugin-vue-devtools": "^7.6.8",
-    "vue-loader": "^17.4.2"
-  },
-  "description": "Mithra is a simple static platform, to teach and to present scientific ideas.",
-  "main": "postcss.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Independent-Society-of-Knowledge/Mithra.git"
-  },
-  "author": "Independent Society of Knowledge",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/Independent-Society-of-Knowledge/Mithra/issues"
-  },
-  "homepage": "https://github.com/Independent-Society-of-Knowledge/Mithra#readme"
+    "postcss": "^8.4.47",
+    "sass": "^1.79.3",
+    "sass-embedded": "^1.79.3",
+    "tailwindcss": "^3.4.12",
+    "vite": "^5.3.1",
+    "vite-svg-loader": "^5.1.0",
+    "vue-svg-loader": "^0.16.0",
+    "vue-template-compiler": "^2.7.16"
+  }
 }

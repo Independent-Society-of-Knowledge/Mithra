@@ -18,11 +18,11 @@ const props = defineProps({
      flex flex-row px-8px py-4px hover:py-16px nuke-transition-productive-standard-moderate-01 gap-32px justify-start items-center
    hover:bg-light-50 dark:hover:bg-dark-70 group hover:bg-opacity-20">
     <div class="nuke-text-code-01 opacity-0 group-hover:opacity-100 group-hover:text-dark-10">{{ number }}</div>
-    <div class="contents" v-html="content" :id="number"/>
+    <div class="contents no-scrollbar" v-html="content" :id="number"/>
   </div>
 </template>
 
-<style  lang="scss">
+<style  lang="scss" scoped>
 ::v-deep(p) {
   @apply text-white nuke-text-fluid-paragraph-01 bg-transparent;
 }

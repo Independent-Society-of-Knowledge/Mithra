@@ -1,4 +1,3 @@
-@use "sass:meta";
 // Nukleus: A design system for knowledge (vue-components-library)
 //
 // Copyright © 2024 Independent Society of Knowledge
@@ -24,9 +23,10 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-
 @layer utilities {
-  @import "nuk-constants";
-  @import "nuk-transition";
-  @import "nuk-type";
+  @import 'nuk-constants.scss';
+  @import 'nuk-type.scss';
+  @import 'nuk-data-classes.scss';
+  @import 'nuk-transition.scss';
+  @import 'nuk-press-typography';
 }

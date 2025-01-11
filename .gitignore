@@ -28,4 +28,4 @@ coverage
 *.sw?
 
 *.tsbuildinfo
-/.vscode/
+/public/reductor.bash

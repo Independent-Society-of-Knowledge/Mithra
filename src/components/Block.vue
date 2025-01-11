@@ -24,65 +24,65 @@ const props = defineProps({
 
 <style  lang="scss" >
 ::v-deep(p) {
-  @apply text-white nuke-text-fluid-paragraph-01 bg-transparent;
+  @apply text-white  bg-transparent;
 }
 ::v-deep(content){
-  @apply text-white nuke-text-fluid-paragraph-01;
+  @apply text-white ;
 }
 ::v-deep(h1) {
-  @apply text-white nuke-text-fluid-display-04 bg-transparent ;
+  @apply text-white  bg-transparent ;
 }
 
 ::v-deep(h2) {
-  @apply text-white nuke-text-fluid-display-03 bg-transparent;
+  @apply text-white  bg-transparent;
 }
 
 ::v-deep(h3) {
-  @apply text-white nuke-text-fluid-display-02 bg-transparent;
+  @apply text-white  bg-transparent;
 }
 
 ::v-deep(h4) {
-  @apply text-white nuke-text-fluid-display-01;
+  @apply text-white ;
 }
 
 ::v-deep(h5) {
-  @apply text-white nuke-text-fluid-heading-04;
+  @apply text-white ;
 }
 
 ::v-deep(h6) {
-  @apply text-white nuke-text-fluid-heading-03;
+  @apply text-white ;
 }
 
 ::v-deep(b) {
-  @apply text-white nuke-text-fluid-paragraph-01;
+  @apply text-white ;
 }
 
 ::v-deep(i) {
-  @apply text-white italic nuke-text-fluid-paragraph-01;
+  @apply text-white italic ;
 }
 
 ::v-deep(a) {
-  @apply text-primary-40 underline nuke-text-fluid-paragraph-01 ;
+  @apply text-primary-40 underline  ;
 }
 
 ::v-deep(a:hover) {
-  @apply text-primary-20 nuke-text-fluid-paragraph-01;
+  @apply text-primary-20 ;
 }
 
 ::v-deep(reference) {
-  @apply nuke-text-fluid-paragraph-01 text-light-40;
+  @apply  text-light-40;
 }
 
 ::v-deep(.inlineCode) {
-  @apply text-white bg-dark-80 nuke-text-fluid-paragraph-01 p-[2px_4px] ;
+  @apply text-white bg-dark-80  p-[2px_4px] ;
 }
 
 ::v-deep(.codeBlock) {
-  @apply text-white bg-dark-80 nuke-text-fluid-paragraph-01   items-center justify-center flex  leading-[1.4];
+  @apply text-white bg-dark-80    items-center justify-center flex  leading-[1.4];
 }
 
 ::v-deep(blockQuote) {
-  @apply text-white nuke-text-fluid-quotation-02;
+  @apply text-white ;
 }
 
 ::v-deep(.orderedListItem){

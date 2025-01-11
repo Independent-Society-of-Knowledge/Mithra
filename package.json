@@ -1,5 +1,5 @@
 {
-  "name": "iskportal",
+  "name": "mithra",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/nesting": "^0.0.0-insiders.565cd3e",
     "core-js": "^3.38.1",
     "html-loader": "^5.1.0",
     "markdown-it": "^14.1.0",
@@ -33,7 +34,19 @@
     "tailwindcss": "^3.4.12",
     "vite": "^5.3.1",
     "vite-svg-loader": "^5.1.0",
-    "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.7.16"
-  }
+    "vue-svg-loader": "^0.12.0",
+    "vue-template-compiler": "^0.1.0"
+  },
+  "description": "Mithra is a modern tool for teaching and presenting in science.",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Independent-Society-of-Knowledge/Mithra.git"
+  },
+  "author": "Independent Society of Knowledge",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Independent-Society-of-Knowledge/Mithra/issues"
+  },
+  "homepage": "https://github.com/Independent-Society-of-Knowledge/Mithra#readme"
 }

@@ -23,19 +23,10 @@
 // Email:        ceo@iskportal.com
 // version 1.0.0
 
-$durations: "fast-01", "fast-02", "moderate-01", "moderate-02", "slow-01", "slow-02";
-$easing: "entrance", "standard", "exiting";
-$modes: "expressive", "productive";
-
-
-@each $duration in $durations {
-  @each $ease in $easing {
-    @each $mode in $modes {
-      .nuke-transition-#{$mode}-#{$ease}-#{$duration} {
-        transition: all;
-        transition-duration: var(--nuke-duration-#{$duration});
-        transition-timing-function: var(--nuke-#{$ease}-#{$mode}-easing);
-      }
-    }
-  }
+@layer utilities {
+  @import 'nuk-constants';
+  @import 'nuk-type';
+  @import 'nuk-data-classes';
+  @import 'nuk-transition';
+  @import 'nuk-press-typography';
 }

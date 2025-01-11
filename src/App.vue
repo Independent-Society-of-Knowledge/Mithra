@@ -38,5 +38,4 @@
 </script>
 
 <style scoped>
-@import "@/assets/styling/main.css";
 </style>

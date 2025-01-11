@@ -9,10 +9,19 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+
   ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  css: {
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/assets/styling/nuk-style.scss";`
+      }
+    }
+  }
+
 })

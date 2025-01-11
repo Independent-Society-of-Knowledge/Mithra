@@ -1,6 +1,6 @@
 {
-  "name": "feynview-web",
-  "version": "0.0.0",
+  "name": "mithra",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,11 +12,34 @@
     "katex": "^0.16.19",
     "marked": "^15.0.6",
     "pinia": "^2.3.0",
-    "vue": "^3.5.13"
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "postcss-loader": "^8.1.1",
+    "sass": "^1.83.1",
+    "sass-embedded": "^1.83.1",
+    "sass-loader": "^16.0.4",
+    "tailwindcss": "^3.4.17",
     "vite": "^6.0.5",
-    "vite-plugin-vue-devtools": "^7.6.8"
-  }
+    "vite-plugin-vue-devtools": "^7.6.8",
+    "vue-loader": "^17.4.2"
+  },
+  "description": "Mithra is a simple static platform, to teach and to present scientific ideas.",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Independent-Society-of-Knowledge/Mithra.git"
+  },
+  "author": "Independent Society of Knowledge",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Independent-Society-of-Knowledge/Mithra/issues"
+  },
+  "homepage": "https://github.com/Independent-Society-of-Knowledge/Mithra#readme"
 }

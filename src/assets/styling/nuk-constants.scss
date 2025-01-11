@@ -1,0 +1,129 @@
+// Nukleus: A design system for knowledge (vue-components-library)
+//
+// Copyright © 2024 Independent Society of Knowledge
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
+//
+// Contact Information:
+// Independent Society of Knowledge
+// Email: projects@iskportal.com
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email:        ceo@iskportal.com
+// version 1.0.0
+
+:root {
+
+  // Colors
+  // --- Azure Pallet
+  --nuke-primary-10: #f2e2ff;
+  --nuke-primary-20: #d9bcf3;
+  --nuke-primary-30: #c99eef;
+  --nuke-primary-40: #a57ccd;
+  --nuke-primary-50: #8159ab;
+  --nuke-primary-60: #6f489a;
+  --nuke-primary-70: #5d3689;
+  --nuke-primary-80: #4b2578;
+  --nuke-primary-90: #381366;
+  --nuke-primary-100: #240b43;
+
+  // --- Gray Pallet
+  --nuke-dark-gray-10: #606060;
+  --nuke-dark-gray-20: #545454;
+  --nuke-dark-gray-30: #484848;
+  --nuke-dark-gray-40: #3c3c3c;
+  --nuke-dark-gray-50: #303030;
+  --nuke-dark-gray-60: #242424;
+  --nuke-dark-gray-70: #181818;
+  --nuke-dark-gray-80: #0c0c0c;
+  --nuke-dark-gray-90: #060606;
+  --nuke-dark-gray-100: #000000;
+
+  --nuke-light-gray-10: #ffffff;
+  --nuke-light-gray-20: #fafafa;
+  --nuke-light-gray-30: #f6f6f6;
+  --nuke-light-gray-40: #ececec;
+  --nuke-light-gray-50: #d8d8d8;
+  --nuke-light-gray-60: #b0b0b0;
+  --nuke-light-gray-70: #9c9c9c;
+  --nuke-light-gray-80: #888888;
+  --nuke-light-gray-90: #7c7c7c;
+  --nuke-light-gray-100: #717171;
+
+
+  // --- Warning Pallet
+  --nuke-warning-10: #ffdd60;
+  --nuke-warning-20: #ffd640;
+  --nuke-warning-30: #ffc800;
+  --nuke-warning-40: #e8b600;
+  --nuke-warning-50: #d3a500;
+
+  // --- Danger Pallet
+  --nuke-danger-10: #d84154;
+  --nuke-danger-20: #c42134;
+  --nuke-danger-30: #b00014;
+  --nuke-danger-40: #a00012;
+  --nuke-danger-50: #910010;
+
+  // --- Success Pallet
+  --nuke-success-10: #aefcbb;
+  --nuke-success-20: #83d792;
+  --nuke-success-30: #57b269;
+  --nuke-success-40: #2c8d40;
+  --nuke-success-50: #167a2b;
+
+  // Spacing
+  --nuke-0px: 0px;
+  --nuke-1px: 1px;
+  --nuke-2px: 2px;
+  --nuke-4px: 4px;
+  --nuke-6px: 6px;
+  --nuke-8px: 8px;
+  --nuke-12px: 12px;
+  --nuke-16px: 16px;
+  --nuke-24px: 24px;
+  --nuke-32px: 32px;
+  --nuke-48px: 48px;
+  --nuke-64px: 64px;
+  --nuke-96px: 96px;
+  --nuke-128px: 128px;
+
+  // Breakpoint
+  --nuke-xs: 0px;
+  --nuke-sm: 320px;
+  --nuke-md: 672px;
+  --nuke-lg: 1056px;
+  --nuke-xl: 1312px;
+  --nuke-mx: 1584px;
+
+  // Animation
+  // --- Easing
+  --nuke-standard-productive-easing: cubic-bezier(0.2, 0, 0.38, 0.9);
+  --nuke-entrance-productive-easing: cubic-bezier(0, 0, 0.38, 0.9);
+  --nuke-exiting-productive-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  --nuke-standard-expressive-easing: cubic-bezier(0.4, 0.14, 0.3, 1);
+  --nuke-entrance-expressive-easing: cubic-bezier(0, 0, 0.3, 1);
+  --nuke-exiting-expressice-easing: cubic-bezier(0.2, 0, 1, 0.9);
+
+  // --- Duration
+  --nuke-duration-fast-01: 70ms;
+  --nuke-duration-fast-02: 110ms;
+  --nuke-duration-moderate-01: 150ms;
+  --nuke-duration-moderate-02: 240ms;
+  --nuke-duration-slow-01: 400ms;
+  --nuke-duration-slow-02: 700ms;
+
+
+}

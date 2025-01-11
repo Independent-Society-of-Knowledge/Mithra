@@ -1,0 +1,191 @@
+// Copyright © 2024 Independent Society of Knowledge
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
+//
+// Contact Information:
+// Independent Society of Knowledge
+// Email: projects@iskportal.com
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email: ceo@iskportal.com
+// version 1.0.0
+@use 'sass:map';
+@use 'sass:string';
+
+@layer utilities {
+
+
+  //IBM Plex Sans
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  //IBM Plex Serif
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  //IBM Plex Mono
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+  $language: (
+          'en': ('Sans', 'Serif', 'Mono')
+  );
+  $tokens: (
+    // Body Styles
+          'body-compact-02': ('size': '16', 'lh': '22', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+          'body-01':('size': '14', 'lh': '20', 'weight': '400', 'ls': '0.16', 'typeface': 'sans'),
+          'body-02':('size': '16', 'lh': '24', 'weight': '400', 'ls':'0', 'typeface': 'sans'),
+    // Utility Styles
+          'code-01': ('size': '12', 'lh': '16', 'weight': '400', 'ls': '0.32', 'typeface': 'mono'),
+          'code-02': ('size': '14', 'lh': '20', 'weight': '400', 'ls': '0.32', 'typeface': 'mono'),
+          'label-01': ('size': '12', 'lh': '16', 'weight': '400', 'ls': '0.32', 'typeface': 'sans'),
+          'label-02': ('size': '14', 'lh': '18', 'weight': '400', 'ls': '0.16', 'typeface': 'sans'),
+          'helper-text-01': ('size': '12', 'lh': '16', 'weight': '400', 'ls': '0.32', 'typeface': 'sans'),
+          'helper-text-02': ('size': '14', 'lh': '18', 'weight': '400', 'ls': '0.16', 'typeface': 'sans'),
+          'legal-01': ('size': '12', 'lh': '16', 'weight': '400', 'ls': '0.32', 'typeface': 'sans'),
+          'legal-02': ('size': '14', 'lh': '18', 'weight': '400', 'ls': '0.16', 'typeface': 'sans'),
+    // Fixed Headings
+          'heading-compact-01': ('size': '14', 'lh': '18', 'weight': '600', 'ls': '0.16', 'typeface': 'sans'),
+          'heading-compact-02': ('size': '16', 'lh': '22', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+          'heading-01': ('size': '14', 'lh': '20', 'weight': '600', 'ls': '0.16', 'typeface': 'sans'),
+          'heading-02': ('size': '16', 'lh': '24', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+          'heading-03': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+          'heading-04': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+          'heading-05': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          'heading-06': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          'heading-07': ('size': '54', 'lh': '64', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+  );
+  $fluid: (
+          'heading-03': (// xs is actually duplicate of sm
+                  'xs': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '20', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '24', 'lh': '28', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'heading-04': (// xs is actually duplicate of sm
+                  'xs': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '32', 'lh': '40', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '32', 'lh': '40', 'weight': '400', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'heading-05': (// xs is actually duplicate of sm
+                  'xs': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '36', 'lh': '44', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '48', 'lh': '56', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '60', 'lh': '70', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'heading-06': (// xs is actually duplicate of sm
+                  'xs': ('size': '32', 'lh': '40', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '32', 'lh': '40', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '36', 'lh': '44', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '42', 'lh': '50', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '48', 'lh': '56', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '60', 'lh': '70', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'paragraph-01': (// xs is actually duplicate of sm
+                  'xs': ('size': '24', 'lh': '30', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '24', 'lh': '30', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '24', 'lh': '30', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '28', 'lh': '36', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '28', 'lh': '36', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'quotation-01': (// xs is actually duplicate of sm
+                  'xs': ('size': '20', 'lh': '26', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+                  'sm': ('size': '20', 'lh': '26', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+                  'md': ('size': '20', 'lh': '26', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+                  'lg': ('size': '24', 'lh': '30', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+                  'xl': ('size': '28', 'lh': '36', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+                  'mx': ('size': '32', 'lh': '40', 'weight': '400', 'ls': '0', 'typeface': 'serif'),
+          ),
+          'quotation-02': (// xs is actually duplicate of sm
+                  'xs': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+                  'sm': ('size': '32', 'lh': '40', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+                  'md': ('size': '36', 'lh': '44', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+                  'lg': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+                  'xl': ('size': '48', 'lh': '56', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+                  'mx': ('size': '60', 'lh': '70', 'weight': '300', 'ls': '0', 'typeface': 'serif'),
+          ),
+          'display-01': (// xs is actually duplicate of sm
+                  'xs': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '54', 'lh': '64', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '60', 'lh': '70', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '76', 'lh': '86', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'display-02': (// xs is actually duplicate of sm
+                  'xs': ('size': '42', 'lh': '50', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '42', 'lh': '50', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '42', 'lh': '50', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '54', 'lh': '64', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '60', 'lh': '70', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '76', 'lh': '86', 'weight': '600', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'display-03': (// xs is actually duplicate of sm
+                  'xs': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '54', 'lh': '64', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '60', 'lh': '70', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'xl': ('size': '76', 'lh': '86', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'mx': ('size': '84', 'lh': '94', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+          ),
+          'display-04': (// xs is actually duplicate of sm
+                  'xs': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'sm': ('size': '42', 'lh': '50', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'md': ('size': '68', 'lh': '78', 'weight': '300', 'ls': '0', 'typeface': 'sans'),
+                  'lg': ('size': '92', 'lh': '102', 'weight': '300', 'ls': '-0.64', 'typeface': 'sans'),
+                  'xl': ('size': '122', 'lh': '130', 'weight': '300', 'ls': '-0.64', 'typeface': 'sans'),
+                  'mx': ('size': '156', 'lh': '164', 'weight': '300', 'ls': '-0.96', 'typeface': 'sans'),
+          ),
+  );
+
+  @each $lang, $value in $language {
+    @each $type in $value {
+      .nuke-text-#{string.to-lower-case($type)} {
+        font-family: 'IBM Plex #{$type}',
+        sans,
+        serif;
+        direction: ltr;
+      }
+    }
+  }
+
+  // fixed tokens
+  @each $bsToken, $value in $tokens {
+    .nuke-text-#{$bsToken} {
+      font-size: #{map.get($value, 'size')}px;
+      font-family: 'IBM Plex #{map.get($value, 'typeface')}';
+      line-height: #{map.get($value, 'lh')}px;
+      letter-spacing: #{map.get($value, 'ls')}px;
+      font-weight: #{map.get($value, 'weight')};
+    }
+  }
+
+  // fluid tokens
+  @each $fluidToken, $value in $fluid {
+    .nuke-text-fluid-#{$fluidToken} {
+      @each $breakPoint, $subValue in $value {
+        @apply #{$breakPoint}:text-[#{map.get($subValue, 'size')}px]
+        #{$breakPoint}:leading-[#{map.get($subValue, 'lh')}px]
+        #{$breakPoint}:tracking-[#{map.get($subValue, 'ls')}px]
+        #{$breakPoint}:font-[#{map.get($subValue, 'weight')}];
+      }
+    }
+  }
+
+}

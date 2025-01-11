@@ -1,0 +1,67 @@
+/*!
+ * Copyright © 2024 Independent Society of Knowledge
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ *
+ * Contact Information:
+ * Independent Society of Knowledge
+ * Email: projects@iskportal.com
+ *
+ * SPDX-License-Identifier: GPL-2.0-or-later
+ *
+ * Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+ * Email:        ceo@iskportal.com
+ * version 1.0.0
+ *
+ */
+
+@import 'nuk-type';
+
+.press{
+  @apply text-dark-100 dark:text-light-10 flex flex-col gap-16px;
+
+  h1 {
+    @apply nuke-text-fluid-display-01
+  }
+
+  h2 {
+    @apply nuke-text-fluid-heading-03
+  }
+  h3 {
+    @apply nuke-text-heading-06
+  }
+  h4 {
+    @apply nuke-text-fluid-heading-03
+  }
+  h5 {
+    @apply nuke-text-fluid-heading-03
+  }
+  h6 {
+    @apply nuke-text-fluid-heading-03
+  }
+  p {
+    @apply nuke-text-fluid-paragraph-01 print:nuke-text-body-02
+  }
+  blockquote > p {
+    @apply nuke-text-fluid-quotation-01
+  }
+  code {
+    @apply nuke-text-code-01
+  }
+  img {
+    @apply max-w-full min-w-fit flex justify-center items-center
+  }
+}
+
+
+

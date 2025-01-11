@@ -1,0 +1,31 @@
+<!--
+  - Copyright © 2024 Independent Society of Knowledge
+  - This program is free software: you can redistribute it and/or modify
+  - it under the terms of the GNU General Public License as published by
+  - the Free Software Foundation, either version 2 of the License, or
+  - (at your option) any later version.
+  -
+  - This program is distributed in the hope that it will be useful,
+  - but WITHOUT ANY WARRANTY; without even the implied warranty of
+  - MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  - GNU General Public License for more details.
+  -
+  - You should have received a copy of the GNU General Public License
+  - along with this program. If not, see <https://www.gnu.org/licenses/>.
+  -
+  - Contact Information:
+  - Independent Society of Knowledge
+  - Email: projects@iskportal.com
+  -
+  - SPDX-License-Identifier: GPL-2.0-or-later
+  -
+  - Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+  - Email:        ceo@iskportal.com
+  - version 1.0.0
+  -
+  -->
+
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16 160.5H80C85.5229 160.5 90 156.023 90 150.5C90 144.977 85.5229 140.5 80 140.5H36C27.1634 140.5 20 133.337 20 124.5V36.5C20 27.6634 27.1634 20.5 36 20.5H110C115.523 20.5 120 24.9772 120 30.5C120 36.0228 124.477 40.5 130 40.5C135.523 40.5 140 36.0228 140 30.5V16.5C140 7.66344 132.837 0.5 124 0.5H16C7.16344 0.5 0 7.66345 0 16.5V144.5C0 153.337 7.16344 160.5 16 160.5Z" fill="currentColor"/>
+    <path d="M100 150.5V60.5C100 54.9771 104.477 50.5 110 50.5C115.523 50.5 120 54.9772 120 60.5C120 66.0229 124.477 70.5 130 70.5H140V60.5C140 54.9772 144.477 50.5 150 50.5C155.523 50.5 160 54.9772 160 60.5C160 66.0229 155.523 70.5 150 70.5H140V90.5H144C152.837 90.5 160 97.6634 160 106.5V150.5C160 156.023 155.523 160.5 150 160.5C144.477 160.5 140 156.023 140 150.5V90.5H136C127.163 90.5 120 97.6634 120 106.5V125.5V150.5C120 156.023 115.523 160.5 110 160.5C104.477 160.5 100 156.023 100 150.5Z" fill="currentColor"/>
+</svg>

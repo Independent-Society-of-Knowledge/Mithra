@@ -15,82 +15,27 @@ const props = defineProps({
 
 <template>
   <div class="
-     flex flex-row px-8px py-4px hover:py-16px nuke-transition-productive-standard-moderate-01 gap-32px justify-start items-center
+     flex flex-row px-8px hover:pl-16px py-4px  nuke-transition-productive-standard-moderate-01 gap-32px justify-start items-center
    hover:bg-light-50 dark:hover:bg-dark-70 group hover:bg-opacity-20">
-    <div class="nuke-text-code-01 opacity-0 group-hover:opacity-100 group-hover:text-dark-10">{{ number }}</div>
-    <div class="contents no-scrollbar" v-html="content" :id="number"/>
+    <div class="nuke-text-code-01 opacity-0 group-hover:opacity-100 nuke-transition-productive-standard-moderate-01 group-hover:text-dark-10">{{ number }}</div>
+    <div class="contents  nuke-transition-productive-standard-moderate-01 text-white
+    [&_h1]:nuke-text-fluid-display-04
+    [&_h2]:nuke-text-fluid-display-03
+    [&_h3]:nuke-text-fluid-display-02
+    [&_h4]:nuke-text-fluid-display-01
+    [&_h5]:nuke-text-fluid-heading-04
+    [&_h6]:nuke-text-fluid-heading-03
+    [&_p]:nuke-text-fluid-paragraph-01
+    [&_b]:nuke-text-fluid-paragraph-01
+    [&_i]:nuke-text-fluid-paragraph-01
+    [&_blockquote]:nuke-text-fluid-quotation-02  [&_blockquote]:bg-light-50 dark:[&_blockquote]:bg-dark-70 [&_blockquote]:font-italic [&_blockquote]:flex [&_blockquote]:justify-center
+    [&_.katex]:nuke-text-fluid-heading-05
+" v-html="content" :id="number"/>
   </div>
 </template>
 
-<style  lang="scss" >
-::v-deep(p) {
-  @apply text-white  bg-transparent;
-}
-::v-deep(content){
-  @apply text-white ;
-}
-::v-deep(h1) {
-  @apply text-white  bg-transparent ;
-}
+<style  lang="scss" scoped>
 
-::v-deep(h2) {
-  @apply text-white  bg-transparent;
-}
-
-::v-deep(h3) {
-  @apply text-white  bg-transparent;
-}
-
-::v-deep(h4) {
-  @apply text-white ;
-}
-
-::v-deep(h5) {
-  @apply text-white ;
-}
-
-::v-deep(h6) {
-  @apply text-white ;
-}
-
-::v-deep(b) {
-  @apply text-white ;
-}
-
-::v-deep(i) {
-  @apply text-white italic ;
-}
-
-::v-deep(a) {
-  @apply text-primary-40 underline  ;
-}
-
-::v-deep(a:hover) {
-  @apply text-primary-20 ;
-}
-
-::v-deep(reference) {
-  @apply  text-light-40;
-}
-
-::v-deep(.inlineCode) {
-  @apply text-white bg-dark-80  p-[2px_4px] ;
-}
-
-::v-deep(.codeBlock) {
-  @apply text-white bg-dark-80    items-center justify-center flex  leading-[1.4];
-}
-
-::v-deep(blockQuote) {
-  @apply text-white ;
-}
-
-::v-deep(.orderedListItem){
-  @apply text-white
-}
-::v-deep(table) {
-  @apply border border-white;
-}
 
 
 </style>

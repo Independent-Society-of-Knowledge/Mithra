@@ -1,13 +1,15 @@
 <template>
   <div class="w-full h-[100vh] flex flex-col justify-between md:px-32px xs:px-8px lg:px-64px xl:px-[112px] nuke-transition-productive-standard-moderate-01 dark:bg-dark-100 no-scrollbar">
-    <div class="w-full h-fit nuke-text-fluid-heading-03 md:p-32px xs:p-8px nuke-transition-productive-standard-moderate-01 dark:text-white text-black flex flex-row items-center no-scrollbar">
-      <span class="nuke-text-code-02"> > </span> Mithra
-    </div>
+    <router-link to="/">
+      <div class="w-full h-fit nuke-text-fluid-heading-03 md:p-32px xs:p-8px nuke-transition-productive-standard-moderate-01 dark:text-white text-black flex flex-row items-center no-scrollbar">
+        <span class="nuke-text-code-02"> > </span> Mithra <span class="nuke-text-code-02"> -  beta</span>
+      </div>
+    </router-link>
 
     <!-- Main Content Area -->
     <div class="w-full flex-1 flex flex-row gap-4 overflow-hidden pb-16 no-scrollbar">
       <!-- Left Column -->
-      <div class="w-full  flex flex-col items-center justify-end  overflow-y-auto h-[50%] overflow-hidden no-scrollbar   ">
+      <div class="w-full  flex flex-col items-center justify-end   h-[50%] overflow-hidden no-scrollbar   ">
         <div v-for="(item, index) in leftContentItems"
              :key="item.id"
              class="w-full  transition-all duration-300 no-scrollbar "
@@ -17,7 +19,7 @@
       </div>
 
       <!-- Right Column -->
-      <div v-if="rightColumnVisible" class="w-full  flex flex-col items-center justify-end  overflow-y-auto h-[50%]  ">
+      <div v-if="rightColumnVisible" class="w-full  flex flex-col items-center justify-end   h-[50%]  ">
         <div v-for="(item, index) in rightContentItems"
              :key="item.id"
              class="w-full max-w-3xl transition-all duration-300  "

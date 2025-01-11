@@ -22,7 +22,7 @@ const props = defineProps({
   </div>
 </template>
 
-<style  lang="scss" scoped>
+<style  lang="scss">
 ::v-deep(p) {
   @apply text-white nuke-text-fluid-paragraph-01 bg-transparent;
 }

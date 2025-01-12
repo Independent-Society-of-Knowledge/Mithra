@@ -18,7 +18,7 @@ const props = defineProps({
      flex flex-row px-8px hover:pl-16px py-4px  nuke-transition-productive-standard-moderate-01 gap-32px justify-start items-center
    hover:bg-light-50 dark:hover:bg-dark-70 group hover:bg-opacity-20">
     <div class="nuke-text-code-01 opacity-0 group-hover:opacity-100 nuke-transition-productive-standard-moderate-01 group-hover:text-dark-10">{{ number }}</div>
-    <div class="contents  nuke-transition-productive-standard-moderate-01 text-white
+    <div class="contents  nuke-transition-productive-standard-moderate-01 dark:text-white text-black
     [&_h1]:nuke-text-fluid-display-04
     [&_h2]:nuke-text-fluid-display-03
     [&_h3]:nuke-text-fluid-display-02
@@ -30,7 +30,7 @@ const props = defineProps({
     [&_i]:nuke-text-fluid-paragraph-01
     [&_blockquote]:nuke-text-fluid-quotation-02  [&_blockquote]:bg-light-50 dark:[&_blockquote]:bg-dark-70 [&_blockquote]:font-italic [&_blockquote]:flex [&_blockquote]:justify-center
     [&_.katex]:nuke-text-fluid-heading-05
-" v-html="content" :id="number"/>
+" v-html="content" :id="number" />
   </div>
 </template>
 
@@ -38,4 +38,4 @@ const props = defineProps({
 
 
 
-</style>
+</style>67uy6++

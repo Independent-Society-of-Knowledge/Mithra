@@ -29,11 +29,13 @@ import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '@/pages/HomeView.vue'
 import Canvas from '@/pages/Canvas.vue'
 import LearnMore from "@/pages/LearnMore.vue";
+import CanvasV2 from "@/pages/CanvasV2.vue";
 
 const routes = [
     {path: '/', component: HomeView},
-    {path: '/canvas', component: Canvas},
+    {path: '/old/canvas', component: Canvas},
     {path: '/doc', component: LearnMore},
+    {path: '/canvas', component: CanvasV2},
     {
         path: '/:pathMatch(.*)*',
         redirect: "/",

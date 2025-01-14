@@ -16,8 +16,8 @@ const props = defineProps({
 <template>
   <div class="
      flex flex-row px-8px hover:pl-16px py-4px  nuke-transition-productive-standard-moderate-01 gap-32px justify-start items-center
-   hover:bg-light-50 dark:hover:bg-dark-70 group hover:bg-opacity-20">
-    <div class="nuke-text-code-01 opacity-0 group-hover:opacity-100 nuke-transition-productive-standard-moderate-01 group-hover:text-dark-10">{{ number }}</div>
+   hover:bg-light-50 dark:hover:bg-dark-70 focus:bg-light-50 dark:focus:bg-dark-60 group hover:bg-opacity-20">
+    <div class="nuke-text-code-02 opacity-0 group-hover:opacity-100 nuke-transition-productive-standard-moderate-01 group-hover:text-dark-10">{{ number }}</div>
     <div class="contents  nuke-transition-productive-standard-moderate-01 dark:text-white text-black
     [&_h1]:nuke-text-fluid-display-04
     [&_h2]:nuke-text-fluid-display-03

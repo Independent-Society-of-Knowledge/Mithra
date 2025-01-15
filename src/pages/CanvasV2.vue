@@ -1,35 +1,49 @@
 <template>
   <div
-      class="
-      w-full h-32px nuke-text-fluid-heading-03 md:p-32px xs:p-8px nuke-transition-productive-standard-moderate-01
-      dark:text-white bg-white dark:bg-black  text-black flex flex-row items-center  fixed">
-    <router-link to="/"><span class="nuke-text-code-02"> > </span> Mithra <span
-        class="nuke-text-code-02"> -  beta</span></router-link>
-  </div>
-  <div class="canvas  bg-light-10 dark:bg-dark-100 flex flex-row">
-    <div class="blocks px-[256px] py-64px flex flex-col gap-24px overflow-hidden" ref="blocksContainer">
-<!--      <transition-group name="blockList" >-->
-        <BlockV2
-            class="block-item snap-center"
-            v-for="item in content"
-            :key="item.id"
-            :block-id="item.id"
-
-            v-model:raw-content="item.content"
-            @update:rawContent="arg => { item.content = arg }"
-            :class="{ 'focused': focusedBlockIndex === item.id }"
-            @click="focusBlock(item.id)"
-        />
-<!--      </transition-group>-->
-      <button @click="addBlock" class="add-block-button select-none text-black dark:text-white">+</button>
+      class="heading z-[100]
+      w-full h-fit nuke-text-fluid-heading-03 md:p-32px xs:p-8px nuke-transition-productive-standard-moderate-01
+      dark:text-white bg-white dark:bg-black  text-black flex flex-row items-center justify-between  fixed">
+    <div class="flex flex-row gap-4px items-center justify-normal nuke-text-heading-05">
+      <router-link to="/"><span class="nuke-text-code-02 items-center"> > </span> Mithra  <span
+          class="nuke-text-code-02"> 0.3 </span></router-link>
     </div>
-    <div class="flex flex-row w-full h-fit justify-end">
+    <div class="flex flex-row gap-16px">
       <button @click="saveContentAsMD()"
-              class="bg-black border-white border-[2px] rounded-none text-black dark:text-white">download
+              class="
+              rounded-none text-black dark:text-white bg-white hover:bg-light-30 p-8px hover:invert dark:invert hover:dark:invert-0
+              nuke-transition-productive-standard-slow-01">
+        <Download width="24px"/>
       </button>
       <button @click="loadContentFromMD()"
-              class="bg-black border-white border-[2px] rounded-none text-black dark:text-white">upload
+              class="
+              rounded-none text-black dark:text-white bg-white hover:bg-light-30 p-8px hover:invert dark:invert hover:dark:invert-0
+              nuke-transition-productive-standard-slow-01">
+        <Upload width="24px"/>
       </button>
+      <button @click="startPresentation()"
+              class="
+              rounded-none text-black dark:text-white bg-white hover:bg-light-30 p-8px hover:invert dark:invert hover:dark:invert-0
+              nuke-transition-productive-standard-slow-01">
+        <Present width="24px"/>
+      </button>
+    </div>
+    <!--    <button @click="toggleFreeStyle" class="ml-auto">Toggle Free Style</button>-->
+  </div>
+
+  <div class="canvas bg-light-10 dark:bg-dark-100 flex flex-row overflow-hidden">
+    <div :class="{'mr-64': isSidebarOpen}" class="blocks px-[256px] h-[100vh] flex flex-col gap-24px scroll"
+         ref="blocksContainer">
+      <BlockV2
+          class="block-item snap-center nuke-transition-productive-standard-slow-01"
+          v-for="item in content"
+          :key="item.id"
+          :block-id="item.id"
+          v-model:raw-content="item.content"
+          @update:rawContent="arg => { item.content = arg }"
+          :class="{ 'focused': focusedBlockIndex === item.id }"
+          @click="focusBlock(item.id)"
+      />
+      <button @click="addBlock" class="add-block-button select-none text-black dark:text-white">+</button>
     </div>
   </div>
 </template>
@@ -38,20 +52,29 @@
 import BlockV2 from "@/components/BlockV2.vue";
 import {ref, onMounted, nextTick, watch} from "vue";
 import {parseMarkdown} from "@/interpreter/markdownImporter.js";
-import Drawer from "@/components/Drawer.vue";
-
-
+import Menu from "@/assets/icons/menu.svg?component"
+import Download from "@/assets/icons/download.svg?component"
+import Upload from "@/assets/icons/upload.svg?component"
+import Present from "@/assets/icons/presentation-file.svg?component"
 
 const idCounter = ref(0);
-
 const content = ref([{id: 0, content: "", rightHandBlocks: []}]);
+const hiddenBlocks = ref([]);
 const focusedBlockIndex = ref(0);
 const blocksContainer = ref(null);
+const isSidebarOpen = ref(false);
+// const isFreeStyle = ref(false)
+const toggleSidebar = () => {
+  isSidebarOpen.value = !isSidebarOpen.value;
+};
+//
+// const toggleFreeStyle = () => {
+//   isFreeStyle.value = !isFreeStyle.value
+// }
 
 const addBlock = () => {
-
-  content.value.push({id:  content.value.length + 1, content: "", rightHandBlocks: []});
-  focusBlock(content.value.length)
+  content.value.push({id: content.value.length + 1, content: "", rightHandBlocks: []});
+  focusBlock(content.value.length);
 };
 
 const removeBlock = (index) => {
@@ -61,20 +84,18 @@ const removeBlock = (index) => {
       item.id = index;
     });
     focusBlock(content.value[index - 1].id);
-  }
-  else {
-    content.value = [{id: 0, content: "", rightHandBlocks: []}]
+  } else {
+    content.value = [{id: 0, content: "", rightHandBlocks: []}];
     focusBlock(content.value[0].id);
   }
 };
 
-const canvasIsOpen = ref(true)
-
+const canvasIsOpen = ref(true);
 
 const addBlockUnderFocused = () => {
-  idCounter.value = idCounter.value + 1
+  idCounter.value = idCounter.value + 1;
   const focusedIndex = content.value.findIndex(item => item.id === focusedBlockIndex.value);
-  const newBlock = {id: focusedBlockIndex.value+1, content: "", rightHandBlocks: []};
+  const newBlock = {id: focusedBlockIndex.value + 1, content: "", rightHandBlocks: []};
   content.value.splice(focusedIndex + 1, 0, newBlock);
   content.value.forEach((item, index) => {
     item.id = index;
@@ -103,6 +124,36 @@ const centerFocusedBlock = () => {
   }
 };
 
+const startPresentation = () => {
+  hiddenBlocks.value = [...content.value];
+  content.value = [];
+  window.addEventListener("keyup", handlePresentationKey);
+};
+
+const handlePresentationKey = (event) => {
+  if (event.key === " ") {
+    event.preventDefault();
+    showNextBlock();
+    focusBlock(content.value.length - 1);
+  } else if (event.key === "Backspace") {
+    event.preventDefault();
+    hidePreviousBlock();
+    focusBlock(content.value.length - 1);
+  }
+};
+
+const showNextBlock = () => {
+  if (hiddenBlocks.value.length > 0) {
+    content.value.push(hiddenBlocks.value.shift());
+  }
+};
+
+const hidePreviousBlock = () => {
+  if (content.value.length > 0) {
+    hiddenBlocks.value.unshift(content.value.pop());
+  }
+};
+
 onMounted(() => {
   window.addEventListener("keyup", (event) => {
     if (event.ctrlKey && event.key === "Enter") {
@@ -125,7 +176,6 @@ onMounted(() => {
       }
     }
   });
-
   window.addEventListener("keyup", (event) => {
     if (event.ctrlKey && event.key === "ArrowDown") {
       event.preventDefault();
@@ -135,11 +185,6 @@ onMounted(() => {
       }
     }
   });
-
-
-
-
-
   watch(focusedBlockIndex, centerFocusedBlock);
 });
 
@@ -172,7 +217,6 @@ function loadContentFromMD() {
   };
   input.click();
 }
-
 </script>
 
 <style scoped>
@@ -199,6 +243,16 @@ function loadContentFromMD() {
   position: absolute;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
 .canvas {
   @apply flex flex-col items-center h-[100vh] justify-center;
 }
@@ -219,5 +273,10 @@ function loadContentFromMD() {
   @apply border-l-[2px] border-primary-70 dark:border-primary-40;
   opacity: 1;
   transform: scale(1.1);
+}
+
+.sidebar {
+  @apply flex flex-col items-center h-full justify-center;
+  transition: transform 0.5s ease;
 }
 </style>

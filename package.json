@@ -1,6 +1,6 @@
 {
   "name": "mithra",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -37,7 +37,7 @@
     "vue-svg-loader": "^0.12.0",
     "vue-template-compiler": "^0.1.0"
   },
-  "description": "Mithra is a modern tool for teaching and presenting in science.",
+  "description": "Mithra is an open-source platform for scientific presentation and meeting.",
   "main": "src/main.js",
   "repository": {
     "type": "git",
@@ -48,5 +48,5 @@
   "bugs": {
     "url": "https://github.com/Independent-Society-of-Knowledge/Mithra/issues"
   },
-  "homepage": "https://github.com/Independent-Society-of-Knowledge/Mithra#readme"
+  "homepage": "https://mithra.iskportal.com"
 }

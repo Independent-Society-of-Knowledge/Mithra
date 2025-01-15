@@ -31,17 +31,24 @@ import Canvas from '@/pages/Canvas.vue'
 import LearnMore from "@/pages/LearnMore.vue";
 import CanvasV2 from "@/pages/CanvasV2.vue";
 
-const routes = [
-    {path: '/', component: HomeView},
-    {path: '/old/canvas', component: Canvas},
-    {path: '/doc', component: LearnMore},
-    {path: '/canvas', component: CanvasV2},
+import type { RouteRecordRaw } from 'vue-router';
+import FreeStyle from "@/pages/FreeCanvas.vue";
+interface ImportMeta {
+    readonly env: {
+        readonly BASE_URL: string;
+    };
+}
+const routes: RouteRecordRaw[] = [
+    { path: '/', component: HomeView },
+    { path: '/old/canvas', component: Canvas },
+    { path: '/doc', component: LearnMore },
+    { path: '/canvas', component: CanvasV2 },
+    {path: '/free', component: FreeStyle},
     {
         path: '/:pathMatch(.*)*',
         redirect: "/",
     },
-]
-
+];
 
 export const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),

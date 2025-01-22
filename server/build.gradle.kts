@@ -12,16 +12,24 @@ application {
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 
+tasks.register("buildWasmJs") {
+    // Task to build wasmJs files
+    doLast {
+        // Simulate the creation of the directory
+        file("../web/build/dist/wasmJs/productionExecutable").mkdirs()
+    }
+}
+
 tasks.withType<ProcessResources> {
+    dependsOn(tasks.named("buildWasmJs"))
     inputs.dir(file("../web/build/dist/wasmJs/productionExecutable"))
 
-    from("../web/build/dist/wasmJs/productionExecutable") {
+    from(file("../web/build/dist/wasmJs/productionExecutable")) {
         into("web")
         include("**/*")
     }
     duplicatesStrategy = DuplicatesStrategy.WARN
 }
-
 dependencies {
     implementation(libs.ktor.server.html.builder)
     implementation(libs.kotlinx.html)

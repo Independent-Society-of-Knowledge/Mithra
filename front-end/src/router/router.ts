@@ -1,15 +1,21 @@
 import {createRouter, createWebHistory} from "vue-router";
 import Home from "../pages/Home.vue";
-import LearnMore from "../pages/LearnMore.vue";
 import Docs from "../pages/Docs.vue";
 import Canvas from "../pages/Canvas.vue";
 import FourOFour from "../pages/http-status-pages/FourOFour.vue";
+import GetStarted from "../pages/GetStarted.vue";
+import ShowCase from "../pages/ShowCase.vue";
+import Signup from "../pages/auth/Signup.vue";
+import Login from "../pages/auth/Login.vue";
 
 const routes = [
     {path: "/", component: Home},
-    {path: "/learn-more", component: LearnMore},
+    {path: "/get-started", component: GetStarted},
     {path: "/docs", component: Docs},
     {path: "/canvas", component: Canvas},
+    {path: "/show-case", component: ShowCase},
+    {path: "/auth/signup", component: Signup},
+    {path: "/auth/login", component: Login},
     {path: "/:pathMatch(.*)*", component: FourOFour}
 ]
 

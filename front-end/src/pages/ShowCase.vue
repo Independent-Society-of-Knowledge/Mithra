@@ -3,7 +3,7 @@
 </script>
 
 <template>
-learn more
+
 </template>
 
 <style scoped>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[init]">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/api/authentication.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/assets/backgrounds/background.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/assets/backgrounds/homepage-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/form-components/Input.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/form-components/NeutralButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/homepage-components/Banner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/pages/GetStarted.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/pages/ShowCase.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/pages/auth/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/pages/auth/Signup.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-constants.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-data-classes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-static.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/vite-env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/LearnMore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/router/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/router.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mithra-official" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="Vue Composition API Component" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2rwlXY4rsI8NXWN9m65u32o07rz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ApplicationTest.testRoot.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Mithra.executor&quot;: &quot;Run&quot;,
+    &quot;Ktor.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Ktor.EngineMain.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/src/components&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/src/components" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/front-end/src/objects/BlockType.ts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/src/components/homepage-components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="mithra-official" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="mithra-official" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="" />
+      <created>1737478058596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737478058596</updated>
+      <workItem from="1737478060652" duration="14000" />
+      <workItem from="1737478077065" duration="350000" />
+      <workItem from="1737520236445" duration="975000" />
+      <workItem from="1737521626370" duration="27000" />
+      <workItem from="1737527341862" duration="32000" />
+      <workItem from="1737527470537" duration="209000" />
+      <workItem from="1737527688010" duration="303000" />
+      <workItem from="1737527997923" duration="1805000" />
+      <workItem from="1737538928567" duration="560000" />
+      <workItem from="1737633555131" duration="910000" />
+      <workItem from="1737667297680" duration="989000" />
+      <workItem from="1737731607526" duration="316000" />
+      <workItem from="1737731930184" duration="1964000" />
+      <workItem from="1737747437903" duration="2852000" />
+      <workItem from="1737751396235" duration="710000" />
+      <workItem from="1737752127899" duration="8982000" />
+      <workItem from="1737798593260" duration="950000" />
+      <workItem from="1737812793586" duration="978000" />
+      <workItem from="1737813778901" duration="2587000" />
+      <workItem from="1737820323753" duration="1152000" />
+    </task>
+    <task id="LOCAL-00001" summary="[init]">
+      <option name="closed" value="true" />
+      <created>1737478228713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737478228713</updated>
+    </task>
+    <task id="LOCAL-00002" summary="[init]">
+      <option name="closed" value="true" />
+      <created>1737527837791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737527837791</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[init]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[init]" />
+  </component>
+</project>

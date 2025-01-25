@@ -1,0 +1,59 @@
+// Nukleus: A design system for knowledge (styling library)
+//
+// Copyright © 2024 Independent Society of Knowledge
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 2 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/>.
+//
+// Contact Information:
+// Independent Society of Knowledge
+// Email: projects@iskportal.com
+//
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Developed by: Amir H. Ebrahimnezhad (if you helped or your commits are going to be pulled please add your name and email with a comma.)
+// Email:        ceo@iskportal.com
+// version 1.0.0
+
+$colors: "primary", "dark", "light";
+$shades: "10", "20", "30", "40", "50", "60", "70", "80", "90", "100";
+$spaces: '0', '1', '2', '4', '6', '8', '12', '16', '24', '32', '48', '64', '96', '128';
+$sizes: "small", "medium", "large", "xlarge", "max";
+
+.nuk-coloring {
+  @each $color in $colors {
+    &[nuk-color-primary=#{$color}] {
+      @each $shade in $shades {
+        @if $color == "gray" {
+          --nuk-primary-5: var(--nuk-gray-5);
+        }
+        --nuk-primary-#{$shade}: var(--nuk-#{$color}-#{$shade});
+      }
+    }
+
+    &[nuk-color-secondary=#{$color}] {
+      @each $shade in $shades {
+        @if $color == "gray" {
+          --nuk-secondary-5: var(--nuk-gray-5);
+        }
+        --nuk-secondary-#{$shade}: var(--nuk-#{$color}-#{$shade});
+      }
+    }
+  }
+}
+
+.nuk-sizing {
+  @each $size in $sizes {
+    &[nuk-size=#{$size}] {
+      --nuk-size-#{$size}: $size;
+    }
+  }
+}

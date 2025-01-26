@@ -3,6 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/front-end.iml" filepath="$PROJECT_DIR$/front-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mithra-official.iml" filepath="$PROJECT_DIR$/.idea/modules/mithra-official.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/mithra-official.server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/mithra-official.server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/mithra-official.server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/mithra-official.server.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/mithra-official.web.commonMain.iml" filepath="$PROJECT_DIR$/.idea/modules/web/mithra-official.web.commonMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/mithra-official.web.commonTest.iml" filepath="$PROJECT_DIR$/.idea/modules/web/mithra-official.web.commonTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/mithra-official.web.wasmJsMain.iml" filepath="$PROJECT_DIR$/.idea/modules/web/mithra-official.web.wasmJsMain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/web/mithra-official.web.wasmJsTest.iml" filepath="$PROJECT_DIR$/.idea/modules/web/mithra-official.web.wasmJsTest.iml" />
     </modules>
   </component>
 </project>

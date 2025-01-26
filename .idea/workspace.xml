@@ -4,9 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementations] basic pages, styles and components">
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[init] Back-end Module">
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/AuthConfig.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/DatabaseFactory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/Serialization.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/auth/LoginRequest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/auth/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/auth/UserDAO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/auth/UserTable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/docker/Dockerfile.jvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/docker/Dockerfile.legacy-jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/docker/Dockerfile.native" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/docker/Dockerfile.native-micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/java/com/iskportal/GreetingResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/native-test/java/com/iskportal/GreetingResourceIT.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back-end/src/test/java/com/iskportal/GreetingResourceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +40,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/core">
       <ProjectState />
     </projectState>
   </component>
@@ -41,11 +69,18 @@
         <option value="CSS File" />
         <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KotlinScriptingSettings">
+    <option name="suppressDefinitionsCheck" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -58,8 +93,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.ApplicationTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.ApplicationTest.testRoot.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Build Mithra.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build core.executor&quot;: &quot;Run&quot;,
     &quot;Ktor.ApplicationKt.executor&quot;: &quot;Run&quot;,
     &quot;Ktor.EngineMain.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -67,7 +104,7 @@
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/src/components&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/core/settings.gradle.kts&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -75,7 +112,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.echoapi.configurable.AuthenticationSetting&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -107,6 +144,22 @@
       <module name="mithra-official" />
       <option name="filePath" />
       <method v="2" />
+    </configuration>
+    <configuration name="EngineMain" type="KtorApplicationConfigurationType" factoryName="Ktor" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.ktor.server.netty.EngineMain" />
+      <module name="mithra.main" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="includeProvidedScope" value="false" />
+      <option name="mainClass" value="io.ktor.server.netty.EngineMain" />
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" />
+      <option name="shortenCommandLine" />
+      <option name="vmParameters" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -147,6 +200,9 @@
       <workItem from="1737820323753" duration="1526000" />
       <workItem from="1737888299321" duration="843000" />
       <workItem from="1737891571663" duration="1236000" />
+      <workItem from="1737908058354" duration="715000" />
+      <workItem from="1737921252576" duration="4482000" />
+      <workItem from="1737925742617" duration="5895000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -180,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737821848751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[init] Back-end Module">
+      <option name="closed" value="true" />
+      <created>1737908084754</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737908084755</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +253,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[init]" />
     <MESSAGE value="[implementations] basic pages, styles and components" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementations] basic pages, styles and components" />
+    <MESSAGE value="[init] Back-end Module" />
+    <option name="LAST_COMMIT_MESSAGE" value="[init] Back-end Module" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

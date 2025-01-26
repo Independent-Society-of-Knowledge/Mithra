@@ -4,44 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[init]">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/api/authentication.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/assets/backgrounds/background.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/assets/backgrounds/homepage-background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/form-components/Input.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/form-components/NeutralButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/homepage-components/Banner.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/pages/GetStarted.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/pages/ShowCase.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/pages/auth/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/pages/auth/Signup.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-constants.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-data-classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/styles/nuk-static.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/vite-env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/vite.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/LearnMore.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/router/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/router.ts" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementations] basic pages, styles and components">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/NavbarLink.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +144,9 @@
       <workItem from="1737798593260" duration="950000" />
       <workItem from="1737812793586" duration="978000" />
       <workItem from="1737813778901" duration="2587000" />
-      <workItem from="1737820323753" duration="1152000" />
+      <workItem from="1737820323753" duration="1526000" />
+      <workItem from="1737888299321" duration="843000" />
+      <workItem from="1737891571663" duration="1236000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -197,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737527837791</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[init]">
+      <option name="closed" value="true" />
+      <created>1737821687167</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737821687167</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[implementations] basic pages, styles and components">
+      <option name="closed" value="true" />
+      <created>1737821848751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737821848751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +188,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[init]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[init]" />
+    <MESSAGE value="[implementations] basic pages, styles and components" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementations] basic pages, styles and components" />
   </component>
 </project>

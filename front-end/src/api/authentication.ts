@@ -1,6 +1,6 @@
 export const signup = async (email: string, password: string) => {
     try {
-        const response = await fetch('https://your-api-endpoint.com/signup', {
+        const response = await fetch('http://0.0.0.0:8080/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -22,7 +22,7 @@ export const signup = async (email: string, password: string) => {
 
 export const login = async (email: string, password: string) => {
     try {
-        const response = await fetch('https://your-api-endpoint.com/login', {
+        const response = await fetch('http://0.0.0.0:8080/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -4,32 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] authentication initialized">
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/auth/Login.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/core/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/libs.versions.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/Application.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/AuthConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/DatabaseFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/Routing.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/Serialization.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/auth/LoginRequest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/auth/User.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/auth/UserDAO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/auth/UserTable.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/api/authentication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/api/authentication.ts" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] quarkus server initialized">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +205,7 @@
       <workItem from="1737925742617" duration="6389000" />
       <workItem from="1737976323678" duration="2000" />
       <workItem from="1737985472212" duration="450000" />
-      <workItem from="1737987290969" duration="956000" />
+      <workItem from="1737987290969" duration="1302000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -279,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737932794350</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[implementation] quarkus server initialized">
+      <option name="closed" value="true" />
+      <created>1737988372865</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737988372865</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +274,8 @@
     <MESSAGE value="[implementations] basic pages, styles and components" />
     <MESSAGE value="[init] Back-end Module" />
     <MESSAGE value="[implementation] authentication initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation] authentication initialized" />
+    <MESSAGE value="[implementation] quarkus server initialized" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation] quarkus server initialized" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,81 +1,120 @@
-# mithra-official
+# Mithra: The Blackboard of the Internet  
 
-This project was created using the [Ktor Project Generator](https://start.ktor.io).
+Mithra is a comprehensive platform designed for the academic and scientific community to facilitate seamless presentations, collaborative research, and global knowledge sharing. It aims to redefine the boundaries of academic interaction and collaboration by becoming *The Blackboard of the Internet*.  
 
-Here are some useful links to get you started:
+---
 
-- [Ktor Documentation](https://ktor.io/docs/home.html)
-- [Ktor GitHub page](https://github.com/ktorio/ktor)
-- The [Ktor Slack chat](https://app.slack.com/client/T09229ZC6/C0A974TJ9). You'll need to [request an invite](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up) to join.
+## Features  
 
-## Features
+### Academic Collaboration  
+- **Real-time Presentations**: Enable live lectures, webinars, and research discussions.  
+- **Collaborative Document Editing**: Provide tools for synchronized, multi-user editing of documents and presentations.  
+- **Open Lectures**: Allow users to host public sessions for teaching and learning.  
 
-Here's a list of features included in this project:
+### AI-Powered Assistance  
+- Generate lecture outlines, slides, and research presentations using artificial intelligence.  
+- Provide automated content enhancement and suggestions tailored to academic requirements.  
 
-| Name                                                                   | Description                                                                        |
-| ------------------------------------------------------------------------|------------------------------------------------------------------------------------ |
-| [HTML DSL](https://start.ktor.io/p/html-dsl)                           | Generates HTML from Kotlin DSL                                                     |
-| [Routing](https://start.ktor.io/p/routing)                             | Provides a structured routing DSL                                                  |
-| [CSS DSL](https://start.ktor.io/p/css-dsl)                             | Generates CSS from Kotlin DSL                                                      |
-| [HTMX](https://start.ktor.io/p/htmx)                                   | Includes HTMX for front-end scripting                                              |
-| [WebSockets](https://start.ktor.io/p/ktor-websockets)                  | Adds WebSocket protocol support for bidirectional client connections               |
-| [kotlinx.serialization](https://start.ktor.io/p/kotlinx-serialization) | Handles JSON serialization using kotlinx.serialization library                     |
-| [Content Negotiation](https://start.ktor.io/p/content-negotiation)     | Provides automatic content conversion according to Content-Type and Accept headers |
-| [Exposed](https://start.ktor.io/p/exposed)                             | Adds Exposed database to your application                                          |
-| [Metrics](https://start.ktor.io/p/metrics)                             | Adds supports for monitoring several metrics                                       |
-| [Swagger](https://start.ktor.io/p/swagger)                             | Serves Swagger UI for your project                                                 |
-| [HttpsRedirect](https://start.ktor.io/p/https-redirect)                | Redirects insecure HTTP requests to the respective HTTPS endpoint                  |
-| [OpenAPI](https://start.ktor.io/p/openapi)                             | Serves OpenAPI documentation                                                       |
-| [HSTS](https://start.ktor.io/p/hsts)                                   | Enables HTTP Strict Transport Security (HSTS)                                      |
-| [CORS](https://start.ktor.io/p/cors)                                   | Enables Cross-Origin Resource Sharing (CORS)                                       |
-| [Compression](https://start.ktor.io/p/compression)                     | Compresses responses using encoding algorithms like GZIP                           |
-| [Caching Headers](https://start.ktor.io/p/caching-headers)             | Provides options for responding with standard cache-control headers                |
-| [Status Pages](https://start.ktor.io/p/status-pages)                   | Provides exception handling for routes                                             |
-| [Static Content](https://start.ktor.io/p/static-content)               | Serves static files from defined locations                                         |
-| [Server-Sent Events (SSE)](https://start.ktor.io/p/sse)                | Support for server push events                                                     |
-| [Resources](https://start.ktor.io/p/resources)                         | Provides type-safe routing                                                         |
-| [Request Validation](https://start.ktor.io/p/request-validation)       | Adds validation for incoming requests                                              |
-| [Sessions](https://start.ktor.io/p/ktor-sessions)                      | Adds support for persistent sessions through cookies or headers                    |
-| [CSRF](https://start.ktor.io/p/csrf)                                   | Cross-site request forgery mitigation                                              |
-| [Authentication](https://start.ktor.io/p/auth)                         | Provides extension point for handling the Authorization header                     |
-| [Authentication JWT](https://start.ktor.io/p/auth-jwt)                 | Handles JSON Web Token (JWT) bearer authentication scheme                          |
-| [Authentication Basic](https://start.ktor.io/p/auth-basic)             | Handles 'Basic' username / password authentication scheme                          |
+### Comprehensive Integration  
+- Seamless integration with **KnowledgeBase**, a unified platform for research networking, paper sharing, and community building.  
+- Compatibility with **Koncept**, an Integrated Research Environment for conducting collaborative scientific inquiries.  
 
-## Structure
+### Customizable User Experience  
+- Support for themes, including light and dark modes, and user-defined styling preferences.  
+- Language localization to support a diverse, global user base.  
+- Advanced notification and subscription management for lectures and research updates.  
 
-This project includes the following modules:
+### Research Tools  
+- **Versioning and Tracking**: Ensure detailed tracking of lecture and research document versions.  
+- **Networking Features**: Facilitate professional networking with researchers and educators worldwide.  
 
-| Path             | Description                              |
-| ------------------|------------------------------------------ |
-| [server](server) | A runnable Ktor server implementation    |
-| [web](web)       | Front-end Kotlin scripts for the browser |
+---
 
-## Building
+## Technology Stack  
 
-To build the project, use one of the following tasks:
+### Backend:  
+- **Framework**: Quarkus (microservices architecture)  
+- **Communication**: RESTful APIs and WebSocket integration for real-time functionality  
+- **Authentication**: OAuth2 and JWT for secure user management  
+- **Documentation**: OpenAPI for standardized API documentation  
 
-| Task                                            | Description                                                          |
-| -------------------------------------------------|---------------------------------------------------------------------- |
-| `./gradlew build`                               | Build everything                                                     |
-| `./gradlew :server:buildFatJar`                 | Build an executable JAR of the server with all dependencies included |
-| `./gradlew :server:buildImage`                  | Build the docker image to use with the fat JAR                       |
-| `./gradlew :server:publishImageToLocalRegistry` | Publish the docker image locally                                     |
-| `./gradlew -t :web:build`                       | Build WASM scripts continuously                                      |
+### Frontend:  
+- **Framework**: Vue.js for a dynamic, modular user interface  
+- **Styling**: Tailwind CSS for consistent and customizable design  
 
-## Running
+### Database:  
+- **Primary Database**: PostgreSQL for structured data management  
+- **Search Engine**: Elasticsearch for fast and efficient data indexing  
 
-To run the project, use one of the following tasks:
+### Additional Technologies:  
+- **Containerization**: Docker for consistent deployment environments  
+- **Continuous Integration/Continuous Deployment**: GitHub Actions for automated testing and deployments  
 
-| Task                                 | Description                            |
-| --------------------------------------|---------------------------------------- |
-| `./gradlew :server:run`              | Run the server                         |
-| `./gradlew :server:runDocker`        | Run using the local docker image       |
-| `./gradlew -t :web:wasmJsBrowserRun` | Run scripts in a browser, without Ktor |
+---
 
-If the server starts successfully, you'll see the following output:
+## Installation  
 
-```
-2024-12-04 14:32:45.584 [main] INFO  Application - Application started in 0.303 seconds.
-2024-12-04 14:32:45.682 [main] INFO  Application - Responding at http://0.0.0.0:8080
-```
+### Prerequisites:  
+- Java 17 or later  
+- Node.js 18 or later with npm  
+- Docker (optional for containerized deployment)  
 
+### Steps to Install and Run  
+
+1. **Clone the Repository**:  
+   ```bash
+   git clone https://github.com/independent-society-of-knowledge/mithra.git
+   cd mithra
+   ```  
+
+2. **Setup the Backend**:  
+   Navigate to the `backend` directory and start the development server:
+   ```bash
+   cd backend
+   ./mvnw quarkus:dev
+   ```  
+
+3. **Setup the Frontend**:  
+   Navigate to the `frontend` directory, install dependencies, and start the development server:
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```  
+
+4. **Configure the Database**:  
+   Update the database connection details in the `application.properties` file located in the backend configuration directory.
+
+5. **Access the Application**:
+    - Backend API: `http://localhost:8080`
+    - Frontend Interface: `http://localhost:3000`
+
+---
+
+## Contribution Guidelines
+
+Contributions are welcome to enhance Mithra's capabilities. Please follow these steps to contribute:
+
+1. Fork the repository and create a new branch for your feature or bug fix.
+2. Ensure the code adheres to the project’s standards and passes all tests.
+3. Submit a detailed pull request describing the changes you have made.
+
+---
+
+## License
+
+Mithra is distributed under the [GPL v3.0 License](LICENSE). Users are encouraged to use, modify, and distribute this project within the terms of the license.
+
+---
+
+## Support
+
+For queries, suggestions, or reporting issues, please contact the development team through the following channels:
+- Open an issue on [GitHub Issues](https://github.com/independent-society-of-knowledge/mithra/issues).
+- Email: [support@mithra.app](mailto:mithra@iskportal.com).
+
+---
+
+## Vision
+
+Mithra aspires to be the cornerstone of academic collaboration and education, fostering a global network of researchers, educators, and learners. Its goal is to provide the tools necessary to make the vision of *The Blackboard of the Internet* a reality.

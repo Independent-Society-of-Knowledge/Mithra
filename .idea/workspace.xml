@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] quarkus server initialized">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]">
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/Application.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +47,8 @@
         <option value="TypeScript File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Object" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -65,37 +67,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ApplicationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ApplicationTest.testRoot.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Mithra.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build core.executor&quot;: &quot;Run&quot;,
-    &quot;Ktor.ApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Ktor.EngineMain.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/core/settings.gradle.kts&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;cn.echoapi.configurable.AuthenticationSetting&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ApplicationTest.executor": "Run",
+    "Gradle.ApplicationTest.testRoot.executor": "Run",
+    "Gradle.Build Mithra.executor": "Run",
+    "Gradle.Build core.executor": "Run",
+    "Gradle.GreetingResourceIT.executor": "Run",
+    "Gradle.GreetingResourceTest.executor": "Run",
+    "Ktor.ApplicationKt.executor": "Run",
+    "Ktor.EngineMain.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/kid-a/Documents/projects/OppticalSpectroscopyProjects",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "cn.echoapi.configurable.AuthenticationSetting",
+    "ts.external.directory.path": "/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end/src/components" />
@@ -107,7 +111,55 @@
       <recent name="$PROJECT_DIR$/front-end/src/components/homepage-components" />
     </key>
   </component>
-  <component name="RunManager" selected="Ktor.EngineMain">
+  <component name="RunManager" selected="Gradle.GreetingResourceIT">
+    <configuration name="GreetingResourceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":testNative" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.GreetingResourceIT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="GreetingResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.GreetingResourceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mithra-official" />
       <method v="2">
@@ -161,6 +213,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.GreetingResourceIT" />
+        <item itemvalue="Gradle.GreetingResourceTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -205,7 +263,8 @@
       <workItem from="1737925742617" duration="6389000" />
       <workItem from="1737976323678" duration="2000" />
       <workItem from="1737985472212" duration="450000" />
-      <workItem from="1737987290969" duration="1302000" />
+      <workItem from="1737987290969" duration="1922000" />
+      <workItem from="1738066328928" duration="19000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -263,7 +322,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737988372865</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[implementation] README update">
+      <option name="closed" value="true" />
+      <created>1737988803418</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737988803418</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[implementation]">
+      <option name="closed" value="true" />
+      <created>1737988817830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1737988817830</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,7 +350,9 @@
     <MESSAGE value="[init] Back-end Module" />
     <MESSAGE value="[implementation] authentication initialized" />
     <MESSAGE value="[implementation] quarkus server initialized" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation] quarkus server initialized" />
+    <MESSAGE value="[implementation] README update" />
+    <MESSAGE value="[implementation]" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation]" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -4,18 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] Defining Canvas">
-      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockSerializationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasSerializationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasTests.kt" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] Blocks and Canvas v1.0 simple definitions with tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/mithra/user/User.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/Application.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/CanvasContent.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.jvm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.legacy-jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.native" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.native-micro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/GreetingResource.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/auth/Login.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/auth/UserProfile.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/native-test/kotlin/com/iskportal/GreetingResourceIT.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockSerializationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasSerializationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/GreetingResourceTest.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +54,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$/core">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -79,6 +103,7 @@
   "keyToString": {
     "Gradle.ApplicationTest.executor": "Run",
     "Gradle.ApplicationTest.testRoot.executor": "Run",
+    "Gradle.BlockSerializationTests.executor": "Run",
     "Gradle.BlockTests.executor": "Run",
     "Gradle.Build Mithra.executor": "Run",
     "Gradle.Build core.executor": "Run",
@@ -93,8 +118,14 @@
     "Gradle.MeetingObjectTests.executor": "Debug",
     "Ktor.ApplicationKt.executor": "Run",
     "Ktor.EngineMain.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MithraApplication.executor": "Run",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
@@ -106,11 +137,15 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "cn.echoapi.configurable.AuthenticationSetting",
     "ts.external.directory.path": "/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
     "vue.recent.templates": [
       "Vue Composition API Component"
     ]
@@ -130,10 +165,45 @@
       <recent name="com.iskportal.session" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.iskportal.session.canvas" />
       <recent name="com.iskportal.session" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CanvasSerializationTests.Serialize Canvas to JSON">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MithraApplication">
+    <configuration name="BlockSerializationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.BlockSerializationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="BlockTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -230,30 +300,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CanvasTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.iskportal.CanvasTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="mithra-official" />
       <method v="2">
@@ -307,13 +353,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MithraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="mithra.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.iskportal.mithra.MithraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BlockSerializationTests" />
         <item itemvalue="Gradle.CanvasSerializationTests.Serialize Canvas to JSON" />
         <item itemvalue="Gradle.CanvasSerializationTests.Deserialize Canvas from JSON" />
         <item itemvalue="Gradle.CanvasSerializationTests" />
         <item itemvalue="Gradle.BlockTests" />
-        <item itemvalue="Gradle.CanvasTests" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +419,8 @@
       <workItem from="1738079579283" duration="653000" />
       <workItem from="1738128220873" duration="3927000" />
       <workItem from="1738136121149" duration="6081000" />
-      <workItem from="1738144140508" duration="258000" />
+      <workItem from="1738144140508" duration="5182000" />
+      <workItem from="1738161482619" duration="3941000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -471,7 +526,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738137025873</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="[implementation] Blocks and Canvas v1.0 simple definitions with tests">
+      <option name="closed" value="true" />
+      <created>1738144429994</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1738144429994</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,7 +563,8 @@
     <MESSAGE value="[implementation] UserProfile" />
     <MESSAGE value="[implementation] Defining Blocks" />
     <MESSAGE value="[implementation] Defining Canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation] Defining Canvas" />
+    <MESSAGE value="[implementation] Blocks and Canvas v1.0 simple definitions with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation] Blocks and Canvas v1.0 simple definitions with tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

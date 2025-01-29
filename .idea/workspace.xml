@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] Blocks and Canvas v1.0 simple definitions with tests">
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]Switching to Spring">
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/mithra/user/User.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -420,7 +420,7 @@
       <workItem from="1738128220873" duration="3927000" />
       <workItem from="1738136121149" duration="6081000" />
       <workItem from="1738144140508" duration="5182000" />
-      <workItem from="1738161482619" duration="3941000" />
+      <workItem from="1738161482619" duration="4678000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -534,7 +534,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738144429994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[implementation]Switching to Spring">
+      <option name="closed" value="true" />
+      <created>1738168881996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738168881996</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +572,8 @@
     <MESSAGE value="[implementation] Defining Blocks" />
     <MESSAGE value="[implementation] Defining Canvas" />
     <MESSAGE value="[implementation] Blocks and Canvas v1.0 simple definitions with tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation] Blocks and Canvas v1.0 simple definitions with tests" />
+    <MESSAGE value="[implementation]Switching to Spring" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation]Switching to Spring" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

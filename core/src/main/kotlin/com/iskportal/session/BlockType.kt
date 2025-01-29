@@ -9,5 +9,6 @@ enum class BlockType {
     VIDEO,
     IMAGE,
     EMBEDED,
-    IFRAME
+    IFRAME,
+    EMPTYBLOCK
 }

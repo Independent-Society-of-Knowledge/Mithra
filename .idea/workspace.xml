@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]">
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/Application.kt" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation] Defining Canvas">
+      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockSerializationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasSerializationTests.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasTests.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/Application.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/CanvasContent.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +53,10 @@
         <option value="CSS File" />
         <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
-        <option value="Kotlin Data Class" />
         <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -71,10 +79,18 @@
   "keyToString": {
     "Gradle.ApplicationTest.executor": "Run",
     "Gradle.ApplicationTest.testRoot.executor": "Run",
+    "Gradle.BlockTests.executor": "Run",
     "Gradle.Build Mithra.executor": "Run",
     "Gradle.Build core.executor": "Run",
+    "Gradle.CanvasSerializationTests.Deserialize Canvas from JSON.executor": "Run",
+    "Gradle.CanvasSerializationTests.Serialize Canvas to JSON.executor": "Run",
+    "Gradle.CanvasSerializationTests.executor": "Run",
+    "Gradle.CanvasTests.executor": "Run",
     "Gradle.GreetingResourceIT.executor": "Run",
     "Gradle.GreetingResourceTest.executor": "Run",
+    "Gradle.MeetingObjectTests.Create a Block and return JSon with subBlocks.executor": "Run",
+    "Gradle.MeetingObjectTests.Create a Block and return JSon.executor": "Run",
+    "Gradle.MeetingObjectTests.executor": "Debug",
     "Ktor.ApplicationKt.executor": "Run",
     "Ktor.EngineMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -110,33 +126,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end/src/components/homepage-components" />
     </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="com.iskportal.session" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.iskportal.session" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.GreetingResourceIT">
-    <configuration name="GreetingResourceIT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":testNative" />
-            <option value="--tests" />
-            <option value="&quot;com.iskportal.GreetingResourceIT&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="GreetingResourceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CanvasSerializationTests.Serialize Canvas to JSON">
+    <configuration name="BlockTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
@@ -149,7 +147,103 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.iskportal.GreetingResourceTest&quot;" />
+            <option value="&quot;com.iskportal.BlockTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CanvasSerializationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.CanvasSerializationTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CanvasSerializationTests.Deserialize Canvas from JSON" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.CanvasSerializationTests.Deserialize Canvas from JSON&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CanvasSerializationTests.Serialize Canvas to JSON" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.CanvasSerializationTests.Serialize Canvas to JSON&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CanvasTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/core" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.iskportal.CanvasTests&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,8 +309,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GreetingResourceIT" />
-        <item itemvalue="Gradle.GreetingResourceTest" />
+        <item itemvalue="Gradle.CanvasSerializationTests.Serialize Canvas to JSON" />
+        <item itemvalue="Gradle.CanvasSerializationTests.Deserialize Canvas from JSON" />
+        <item itemvalue="Gradle.CanvasSerializationTests" />
+        <item itemvalue="Gradle.BlockTests" />
+        <item itemvalue="Gradle.CanvasTests" />
       </list>
     </recent_temporary>
   </component>
@@ -265,6 +362,10 @@
       <workItem from="1737985472212" duration="450000" />
       <workItem from="1737987290969" duration="1922000" />
       <workItem from="1738066328928" duration="19000" />
+      <workItem from="1738079579283" duration="653000" />
+      <workItem from="1738128220873" duration="3927000" />
+      <workItem from="1738136121149" duration="6081000" />
+      <workItem from="1738144140508" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -338,11 +439,54 @@
       <option name="project" value="LOCAL" />
       <updated>1737988817830</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[init] working on back-end initialization processes">
+      <option name="closed" value="true" />
+      <created>1738079601885</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738079601885</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[implementation] UserProfile">
+      <option name="closed" value="true" />
+      <created>1738137002298</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738137002298</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[implementation] Defining Blocks">
+      <option name="closed" value="true" />
+      <created>1738137013794</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738137013794</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[implementation] Defining Canvas">
+      <option name="closed" value="true" />
+      <created>1738137025873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738137025873</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[init]" />
@@ -352,7 +496,11 @@
     <MESSAGE value="[implementation] quarkus server initialized" />
     <MESSAGE value="[implementation] README update" />
     <MESSAGE value="[implementation]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation]" />
+    <MESSAGE value="[init] working on back-end initialization processes" />
+    <MESSAGE value="[implementation] UserProfile" />
+    <MESSAGE value="[implementation] Defining Blocks" />
+    <MESSAGE value="[implementation] Defining Canvas" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation] Defining Canvas" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

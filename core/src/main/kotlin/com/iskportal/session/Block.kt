@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Block(
-    val rawContent: String,
-    val blockType: BlockType,
+    var rawContent: String,
+    var blockType: BlockType,
     val subBlocks: MutableList<Block> = mutableListOf()
 ){
     fun correctBlockTypeBasedOnContent(): BlockType {
@@ -21,6 +21,20 @@ data class Block(
             else -> BlockType.MARKDOWN
         }
     }
+
+    fun addSubBlock(index: Int, subBlock: Block,) {
+        subBlocks.add(index, subBlock)
+    }
+
+    fun removeSubBlock(subBlock: Int) {
+        subBlocks.removeAt(subBlock)
+    }
+
+    fun editSubBlock(content: String, blockType: BlockType, editingSubBlockIndex: Int) {
+        subBlocks.set(editingSubBlockIndex, Block(content, blockType, subBlocks.toMutableList().get(editingSubBlockIndex).subBlocks))
+    }
+
+
 }
 
 

@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]Switching to Spring">
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardBanner.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardSidebar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/SidebarButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/pages/dashboard/Dashboard.vue" afterDir="false" />
+    <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]Dashboard started">
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardRecentActivityLinks.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Canvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/dashboard/Canvas.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/router/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardBanner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardBanner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardSidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardSidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/components/dashboard/SidebarButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/SidebarButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/dashboard/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/dashboard/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,58 +76,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.ApplicationTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ApplicationTest.testRoot.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BlockSerializationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.BlockTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Mithra.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build core.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CanvasSerializationTests.Deserialize Canvas from JSON.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CanvasSerializationTests.Serialize Canvas to JSON.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CanvasSerializationTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CanvasTests.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GreetingResourceIT.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.GreetingResourceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MeetingObjectTests.Create a Block and return JSon with subBlocks.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MeetingObjectTests.Create a Block and return JSon.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MeetingObjectTests.executor&quot;: &quot;Debug&quot;,
-    &quot;Ktor.ApplicationKt.executor&quot;: &quot;Run&quot;,
-    &quot;Ktor.EngineMain.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MithraApplication.executor&quot;: &quot;Run&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/projects/OppticalSpectroscopyProjects&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;cn.echoapi.configurable.AuthenticationSetting&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.ApplicationTest.executor": "Run",
+    "Gradle.ApplicationTest.testRoot.executor": "Run",
+    "Gradle.BlockSerializationTests.executor": "Run",
+    "Gradle.BlockTests.executor": "Run",
+    "Gradle.Build Mithra.executor": "Run",
+    "Gradle.Build core.executor": "Run",
+    "Gradle.CanvasSerializationTests.Deserialize Canvas from JSON.executor": "Run",
+    "Gradle.CanvasSerializationTests.Serialize Canvas to JSON.executor": "Run",
+    "Gradle.CanvasSerializationTests.executor": "Run",
+    "Gradle.CanvasTests.executor": "Run",
+    "Gradle.GreetingResourceIT.executor": "Run",
+    "Gradle.GreetingResourceTest.executor": "Run",
+    "Gradle.MeetingObjectTests.Create a Block and return JSon with subBlocks.executor": "Run",
+    "Gradle.MeetingObjectTests.Create a Block and return JSon.executor": "Run",
+    "Gradle.MeetingObjectTests.executor": "Debug",
+    "Ktor.ApplicationKt.executor": "Run",
+    "Ktor.EngineMain.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MithraApplication.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/kid-a/Documents/Projects/Active/Mithra",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "cn.echoapi.configurable.AuthenticationSetting",
+    "ts.external.directory.path": "/home/kid-a/Documents/Projects/Active/Mithra/front-end/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Composition API Component&quot;
+    "vue.recent.templates": [
+      "Vue Composition API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end/src/components" />
@@ -401,7 +401,8 @@
       <workItem from="1738161482619" duration="4678000" />
       <workItem from="1738222607899" duration="304000" />
       <workItem from="1738223008664" duration="481000" />
-      <workItem from="1738223494732" duration="2167000" />
+      <workItem from="1738223494732" duration="2191000" />
+      <workItem from="1738248344749" duration="4167000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
@@ -523,7 +524,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738168881996</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[implementation]Dashboard started">
+      <option name="closed" value="true" />
+      <created>1738225680265</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738225680265</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,7 +563,8 @@
     <MESSAGE value="[implementation] Defining Canvas" />
     <MESSAGE value="[implementation] Blocks and Canvas v1.0 simple definitions with tests" />
     <MESSAGE value="[implementation]Switching to Spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="[implementation]Switching to Spring" />
+    <MESSAGE value="[implementation]Dashboard started" />
+    <option name="LAST_COMMIT_MESSAGE" value="[implementation]Dashboard started" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

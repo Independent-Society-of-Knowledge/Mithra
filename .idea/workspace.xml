@@ -5,38 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aa119dd-7001-4972-9107-8c37f0b96a7c" name="Changes" comment="[implementation]Switching to Spring">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/mithra/user/User.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardBanner.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/DashboardSidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/components/dashboard/SidebarButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front-end/src/pages/dashboard/Dashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.dockerignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/core/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/core/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.jvm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.legacy-jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.native" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/docker/Dockerfile.native-micro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/GreetingResource.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/auth/Login.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/auth/UserProfile.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Block.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/BlockType.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/kotlin/com/iskportal/session/Canvas.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/native-test/kotlin/com/iskportal/GreetingResourceIT.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockSerializationTests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/BlockTests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasSerializationTests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/CanvasTests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/kotlin/com/iskportal/GreetingResourceTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Canvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/dashboard/Canvas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/router/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/router/router.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +52,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Vue Composition API Component" />
         <option value="TypeScript File" />
         <option value="Kotlin Object" />
         <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Class" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -99,58 +76,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.ApplicationTest.executor": "Run",
-    "Gradle.ApplicationTest.testRoot.executor": "Run",
-    "Gradle.BlockSerializationTests.executor": "Run",
-    "Gradle.BlockTests.executor": "Run",
-    "Gradle.Build Mithra.executor": "Run",
-    "Gradle.Build core.executor": "Run",
-    "Gradle.CanvasSerializationTests.Deserialize Canvas from JSON.executor": "Run",
-    "Gradle.CanvasSerializationTests.Serialize Canvas to JSON.executor": "Run",
-    "Gradle.CanvasSerializationTests.executor": "Run",
-    "Gradle.CanvasTests.executor": "Run",
-    "Gradle.GreetingResourceIT.executor": "Run",
-    "Gradle.GreetingResourceTest.executor": "Run",
-    "Gradle.MeetingObjectTests.Create a Block and return JSon with subBlocks.executor": "Run",
-    "Gradle.MeetingObjectTests.Create a Block and return JSon.executor": "Run",
-    "Gradle.MeetingObjectTests.executor": "Debug",
-    "Ktor.ApplicationKt.executor": "Run",
-    "Ktor.EngineMain.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.MithraApplication.executor": "Run",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/kid-a/Documents/projects/OppticalSpectroscopyProjects",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "cn.echoapi.configurable.AuthenticationSetting",
-    "ts.external.directory.path": "/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.ApplicationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ApplicationTest.testRoot.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BlockSerializationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.BlockTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Mithra.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build core.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CanvasSerializationTests.Deserialize Canvas from JSON.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CanvasSerializationTests.Serialize Canvas to JSON.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CanvasSerializationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.CanvasTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GreetingResourceIT.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GreetingResourceTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MeetingObjectTests.Create a Block and return JSon with subBlocks.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MeetingObjectTests.Create a Block and return JSon.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MeetingObjectTests.executor&quot;: &quot;Debug&quot;,
+    &quot;Ktor.ApplicationKt.executor&quot;: &quot;Run&quot;,
+    &quot;Ktor.EngineMain.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MithraApplication.executor&quot;: &quot;Run&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kid-a/Documents/projects/OppticalSpectroscopyProjects&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;cn.echoapi.configurable.AuthenticationSetting&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/kid-a/Documents/Hub/Projects/Active/Mithra/front-end/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/front-end/src/components" />
@@ -159,6 +136,7 @@
       <recent name="$PROJECT_DIR$/front-end/src/objects/BlockType.ts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/front-end/src/pages/dashboard" />
       <recent name="$PROJECT_DIR$/front-end/src/components/homepage-components" />
     </key>
     <key name="CreateKotlinClassDialog.RecentsKey">
@@ -421,6 +399,9 @@
       <workItem from="1738136121149" duration="6081000" />
       <workItem from="1738144140508" duration="5182000" />
       <workItem from="1738161482619" duration="4678000" />
+      <workItem from="1738222607899" duration="304000" />
+      <workItem from="1738223008664" duration="481000" />
+      <workItem from="1738223494732" duration="2167000" />
     </task>
     <task id="LOCAL-00001" summary="[init]">
       <option name="closed" value="true" />
